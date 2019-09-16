@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+            function animatee(){
+			var div = $("svg");
+			div.animate({height: '100px', opacity: '0.4'}, "slow");
+			div.animate({width: '100px', opacity: '0.8'}, "slow");
+			div.animate({height: '300px', opacity: '0.4'}, "slow");
+			div.animate({width: '300px', opacity: '0.8'}, "slow");
+		    }
+
+			function zoominout() {
+				var div = $("svg");
+			    div.toggle(500);
+			    div.fadeOut(500);
+			    div.fadeIn(500);
+			    div.slideDown(500);
+			}
+    </script>
+</head>
+<body bgcolor="orange">
+<hr>
+<center><h1>Ghost SVG ICON</h1></center>
+<hr>
+<ul><h3>
+<li>Hover to change the color</li>
+<li>Click the SVG icon to zoom in and out</li>
+<li>Click the Animate button to animate the icon in a square basis by changing its opacity</li>
+</h3></ul>
+<p><button onclick="animatee()">Animate</button></p>
+<svg onclick="zoominout()" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.52 254.94" width="300" height="300">
+<defs>
+	<style>
+		.cls-1{fill:#2e3192;}
+		.cls-1,.cls-2{stroke:#231f20;stroke-miterlimit:10;}
+		.cls-3,.cls-4,.cls-5{stroke:#231f20;stroke-miterlimit:10;}
+		.cls-2{fill:#231f20;}
+		.cls-3,.cls-4,.cls-5{fill:#231f20;}
+		.cls-1:hover{fill:darkgreen;}
+		.cls-2:hover{fill:red;}
+		.cls-3:hover{fill:red;}
+		.cls-4:hover{fill:white;}
+		.cls-5:hover{fill:red;}
+
+	</style>
+</defs>
+<title>SVG Icon</title>
+	<ellipse class="cls-1" cx="123.17" cy="97" rx="94.5" ry="96.5"/>
+	<ellipse class="cls-2" cx="90.67" cy="57.5" rx="18.5" ry="18"/>
+	<circle class="cls-3" cx="152.17" cy="56" r="17.5"/>
+	<polygon class="cls-4" points="56.12 157.08 1.2 244.31 59.93 223.25 87.95 253.19 113.1 219.01 145.95 254.12 169.2 216.87 201.05 251.95 213.61 205.34 252.22 247.64 201.37 151.9 56.12 157.08"/>
+	<polygon class="cls-5" points="122.67 85.5 114.17 95 131.17 94 122.67 85.5"/><path class="cls-2" d="M111.18,165.79c30.4,22.69,59,24.58,85.1-2.57" transform="translate(-31.33 -49.5)"/>
+</svg>
+</body>
+
+</html>
